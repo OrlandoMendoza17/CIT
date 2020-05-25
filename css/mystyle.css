@@ -16,25 +16,45 @@
   background-color: #007bff;
 }
 
+
 .top-nav-collapse{
   background-color: #232c3d !important;
 }
+.nav-item{
+  font-weight: 500;
+}
+.nav-item:hover{
+  color: #007bff;
+}
 nav > .nav-elements{
+  /* position: fixed;
+  bottom: 82px;
+  width: 43.67px;
+  right: 0px;
+  border-bottom-left-radius: 5px;
+  border-top-left-radius: 5px;
+  background-color: #232c3d55; */
+}
+nav > .nav-elements > ul{
+  padding: 10px 0;
+  text-align: center;
+}
+nav > .nav-elements > ul:nth-of-type(1){
   position: fixed;
   bottom: 82px;
   width: 43.67px;
   right: 0px;
   border-bottom-left-radius: 5px;
   border-top-left-radius: 5px;
-  /* display: flex;
-  flex-direction: column;
-  justify-content: center; */
-  /* background-color: #232c3d; */
   background-color: #232c3d55;
 }
-nav > .nav-elements > ul{
-  padding: 10px 0;
-  text-align: center;
+
+nav > .nav-elements > ul:nth-of-type(2){
+  flex-direction: row;
+  justify-content: space-between;
+}
+nav > .nav-elements > ul:nth-of-type(2) > li{
+  padding: 0 13px ;
 }
 
 nav > .nav-elements > ul > li > .dropdown-menu {
@@ -42,15 +62,15 @@ nav > .nav-elements > ul > li > .dropdown-menu {
   left: unset;
   right: 100%;
   min-width: unset;
+  text-align: center;
 }
+
 nav > .nav-elements > ul > li > .dropdown-menu > .dropdown-item{
-  padding: 0;
+  padding: 1px 0;
+  font-weight: 500;
 }
 
 nav > .nav-elements > ul > li > a:nth-of-type(1) > span{
-  display: none;
-}
-nav > .nav-elements > ul:nth-of-type(2){
   display: none;
 }
 
@@ -229,14 +249,24 @@ section > p{
   }
 }
 @media screen and (min-width: 768px){
+  
   nav > .nav-elements{
+    /* position: unset; */
+    width: 100%;
+    /* border-radius: unset; */
+    /* background-color: unset; */
+    display: grid;
+    grid-template-columns: 1fr auto;
+  } 
+  nav > .nav-elements > ul:nth-of-type(1){
     position: unset;
     width: 100%;
     border-radius: unset;
     background-color: unset;
-    display: grid;
-    grid-template-columns: 1fr auto;
-  } 
+  }
+  nav > .nav-elements > ul:nth-of-type(2) > li{
+    padding: 0 8px ;
+  }
   nav > .nav-elements > ul > li > .dropdown-menu {
     top: 100%;
     left: 0;
@@ -249,6 +279,7 @@ section > p{
   }
   nav > .nav-elements > ul > li > .dropdown-menu > .dropdown-item{
     padding: .5rem;
+    text-align: start;
   }
   
   #proyectos > .grid-proyectos{
