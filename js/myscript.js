@@ -54,77 +54,60 @@ const $header = document.getElementById('topSection')
   return `
           <div>
             <nav class="navbar fixed-top navbar-expand-md navbar-dark scrolling-navbar transparente trans">
-              <div class="container-fluid">
-
-                <!-- Brand -->
-                <a class="navbar-brand" href="${backURL}index.html">
-                  <img class="img-fluid" width="80" src="${backURL}img/logo de cit.png" alt="logo de cit">
-                </a>
-
-                <!-- Links -->
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-
-                  <!-- Left -->
-                  <ul class="navbar-nav" style="margin-bottom: -10px;">
+              <!-- Brand -->
+              <a class="navbar-brand" href="${backURL}index.html">
+                <img class="" width="80" src="${backURL}img/logo de cit.png" alt="logo de cit">
+              </a>
+              <div class="nav-elements">
+                <!-- Left -->
+                <ul class="navbar-nav" style="margin-bottom: -10px;">
+                  
+                  <li class="nav-item dropdown">
+                    <a class="mx-sm-2 mx-md-2 mx-lg-4 nav-item colorgris dropdown-toggle" href="#?">
+                      <i class="fas fa-users bluetech"></i><span>Nosotros</span></a>
                     
-                      <li class="nav-item dropdown">
-                        <a class="mx-sm-2 mx-md-2 mx-lg-4 nav-item colorgris dropdown-toggle" id="navbarDropdownMenuLink-333" data-toggle="dropdown"
-                        aria-haspopup="true" aria-expanded="false" href="#">
-                          <i class="fas fa-users bluetech"></i> Nosotros</a>
-                        
-                        <div class="dropdown-menu dropdown-primary" aria-labelledby="navbarDropdownMenuLink-333">
-                          <a class="dropdown-item" href="${carpetaURL_1}equipo.html">Lideres</a>
-                          <a class="dropdown-item" href="${carpetaURL_1}programacion.html">Programacion</a>
-                          <a class="dropdown-item" href="${carpetaURL_1}diseño.html">Diseño</a>
-                          <a class="dropdown-item" href="${carpetaURL_1}automatizacion.html">Automatismo</a>
-                          <a class="dropdown-item" href="${carpetaURL_1}documentacion.html">Documentación</a>
-                          <a class="dropdown-item" href="${carpetaURL_1}galerias.html">Galeria</a>
-                        </div>
-                      </li>
-                      <li class="nav-item dropdown">
-                        <a class="mx-sm-2 mx-md-2 mx-lg-4 nav-item colorgris dropdown-toggle" id="navbarDropdownMenuLink-333" data-toggle="dropdown"
-                        aria-haspopup="true" aria-expanded="false" href="#">
-                        <i class="fas fa-project-diagram bluetech"></i> Proyectos</a>
-                        
-                        <div class="dropdown-menu dropdown-primary" aria-labelledby="navbarDropdownMenuLink-333">
-                          <a class="dropdown-item" href="${carpetaURL_2}sipi.html">SIPI</a>
-                          <a class="dropdown-item" href="${carpetaURL_2}fedeindustrias.html">FedeIndustrias</a>
-                          <a class="dropdown-item" href="${carpetaURL_2}zayco.html">Zayco</a>
-                          <a class="dropdown-item" href="${carpetaURL_2}valery.html">Valery</a>
-                        </div>
-                      </li>
-                      <li>
-                        <a class="mx-sm-2 mx-md-2 mx-lg-4 nav-item colorgris" href="#?"><i class="fas fa-handshake bluetech"></i> Servicios</a>
-                      </li>
-                      <li>
-                        <a class="mx-sm-2 mx-md-2 mx-lg-4 nav-item colorgris" href="#?"><i class="fas fa-phone bluetech"></i> Contacto</a>
-                      </li>
-                
-                  </ul>
-
-                </div>
+                    <div class="dropdown-menu dropdown-primary">
+                      <a class="dropdown-item" href="${carpetaURL_1}equipo.html">Lideres</a>
+                      <a class="dropdown-item" href="${carpetaURL_1}programacion.html">Programacion</a>
+                      <a class="dropdown-item" href="${carpetaURL_1}diseño.html">Diseño</a>
+                      <a class="dropdown-item" href="${carpetaURL_1}automatizacion.html">Automatismo</a>
+                      <a class="dropdown-item" href="${carpetaURL_1}documentacion.html">Documentación</a>
+                      <a class="dropdown-item" href="${carpetaURL_1}galerias.html">Galeria</a>
+                    </div>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="mx-sm-2 mx-md-2 mx-lg-4 nav-item colorgris dropdown-toggle" href="#?">
+                    <i class="fas fa-project-diagram bluetech"></i><span>Proyectos</span></a>
+                    
+                    <div class="dropdown-menu dropdown-primary">
+                      <a class="dropdown-item" href="${carpetaURL_2}sipi.html">SIPI</a>
+                      <a class="dropdown-item" href="${carpetaURL_2}fedeindustrias.html">FedeIndustrias</a>
+                      <a class="dropdown-item" href="${carpetaURL_2}zayco.html">Zayco</a>
+                      <a class="dropdown-item" href="${carpetaURL_2}valery.html">Valery</a>
+                    </div>
+                  </li>
+                  <li>
+                    <a class="mx-sm-2 mx-md-2 mx-lg-4 nav-item colorgris" href="#?"><i class="fas fa-handshake bluetech"></i><span>Servicios</span></a>
+                  </li>
+                  <li>
+                    <a class="mx-sm-2 mx-md-2 mx-lg-4 nav-item colorgris" href="#?"><i class="fas fa-phone bluetech"></i><span>Contacto</span></a>
+                  </li>
+              
+                </ul>
                 
                 <!-- Redes Sociales, No se Colapsa  -->
-                <div class=" nav-flex-icons col">
-                  <ul class="navbar-nav  d-flex flex-row justify-content-center" style="margin-bottom: -10px;">
-                    <li>
-                      <a href="#?" class="mx-2 mx-sm-2 mx-md-3"><i class="fab fa-facebook-f colorgris bluetech"></i></a>
-                    </li>
-                    <li>
-                      <a href="#?" class="mx-2 mx-sm-2 mx-md-3"><i class="fab fa-twitter colorgris bluetech"></i></a>
-                    </li>
-                  </ul>
-                </div>
-
-                <!-- Collapse -->
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                  aria-expanded="false" aria-label="Toggle navigation">
-                  <span class="navbar-toggler-icon"></span>
-                </button>
-              </div>
+                <ul class="navbar-nav" style="margin-bottom: -10px;">
+                  <li>
+                    <a href="#?" class="mx-md-3"><i class="fab fa-facebook-f colorgris bluetech"></i></a>
+                  </li>
+                  <li>
+                    <a href="#?" class="mx-md-3"><i class="fab fa-twitter colorgris bluetech"></i></a>
+                  </li>
+                </ul>
+              </div>  
             </nav>
 
-            <div id="cover" class="container-fluid d-flex align-items-center justify-content-center">
+            <div id="cover" class="container-fluid">
               
               <div class="cover-container">
                 <div>
@@ -138,10 +121,48 @@ const $header = document.getElementById('topSection')
  }
  function crearNavBar (header){
 
-   const html = document.implementation.createHTMLDocument()
-   html.body.innerHTML = navBar(header)
-  //  console.log(html.body.innerHTML)
+  const html = document.implementation.createHTMLDocument()
+
+  html.body.innerHTML = navBar(header)
   header.append(html.body.children[0])
-  console.log(header.innerHTML)
+
  }
- crearNavBar($header)
+crearNavBar($header)
+
+const $dropdowns = document.querySelectorAll('.dropdown')
+const $main = document.getElementById('main')
+
+const botonesDropDown = () =>{
+  for (let i = 0; i < $dropdowns.length; i++) {
+  
+    let $drop = $dropdowns[i].children[1];
+    
+    $dropdowns[i].children[0].addEventListener('click', () =>{
+      if ($drop.style.display == "") {
+        $drop.style.display = "block"
+        console.log('hizo click! 1')
+        
+      } else if($drop.style.display == "none"){
+        $drop.style.display = "block"
+        console.log('hizo click! 2')
+        
+      }else if($drop.style.display == "block"){
+        $drop.style.display = "none"
+        console.log('hizo click! 3')
+  
+      }
+      for (let i2 = 0; i2 < $dropdowns.length; i2++) {
+        if ($dropdowns[i2].children[1].style.display == "block" && i2 != i){
+          $dropdowns[i2].children[1].style.display = "none";
+        }
+      }
+      console.log($drop.style.display)
+    })
+    
+  }
+}
+
+botonesDropDown()
+
+
+
