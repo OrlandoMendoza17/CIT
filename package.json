@@ -1,0 +1,33 @@
+{
+  "name": "cit",
+  "version": "1.0.0",
+  "description": "CIT WebPage",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/OrlandoMendoza17/CIT.git"
+  },
+  "author": "Orlando Mendoza",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/OrlandoMendoza17/CIT/issues"
+  },
+  "homepage": "https://github.com/OrlandoMendoza17/CIT#readme",
+  "devDependencies": {
+    "@babel/core": "7.12.3",
+    "@babel/preset-env": "7.12.1",
+    "babel-loader": "8.1.0",
+    "css-loader": "5.0.0",
+    "cssnano": "4.1.10",
+    "mini-css-extract-plugin": "1.0.0",
+    "style-loader": "2.0.0",
+    "url-loader": "4.1.0",
+    "webpack": "4.44.2",
+    "webpack-cli": "4.1.0",
+    "webpack-dev-server": "3.11.0",
+    "webpack-merge": "4.2.2"
+  }
+}

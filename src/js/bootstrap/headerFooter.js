@@ -6,7 +6,7 @@ const plantillaFooter = (backURL,  carpetaURL_2, carpetaURL_1) =>{
             <div class="grid-footer pt-3">
 
               <div class="logo-footer d-none d-md-block">
-                <img class="d-none d-md-block" src="${backURL}img/logo de cit.png" alt="">
+                <img class="d-none d-md-block" src="${backURL}src/img/logo de cit.png" alt="">
               </div>
 
               <div class="grid-footer-list">
@@ -70,7 +70,7 @@ const plantillaNavBar = (backURL,  carpetaURL_2, carpetaURL_1) =>{
             <nav class="navbar fixed-top navbar-expand-md navbar-dark scrolling-navbar transparente trans">
               <!-- Brand -->
               <a class="navbar-brand" href="${backURL}index.html">
-                <img class="" width="80" src="${backURL}img/logo de cit.png" alt="logo de cit">
+                <img class="" width="80" src="${backURL}src/img/logo de cit.png" alt="logo de cit">
               </a>
               <div class="nav-elements">
                 <!-- Left -->
@@ -125,7 +125,7 @@ const plantillaNavBar = (backURL,  carpetaURL_2, carpetaURL_1) =>{
               
               <div class="cover-container">
                 <div>
-                  <img src="${backURL}img/logo de cit.png" class="img-fluid" alt="logocit">
+                  <img src="${backURL}src/img/logo de cit.png" class="img-fluid" alt="logocit">
                 </div>
               </div>
 
