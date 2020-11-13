@@ -61,6 +61,18 @@ a{
 #galery > .img-container{
   position: relative;
   height: 250px;
+  background-color: rgba(35, 44, 61, 0.25);
+}
+#galery > .img-container::after{
+  content: '\f302';
+  font-family: "Font Awesome 5 Free";
+  font-style: normal;
+  font-size: 35px;
+  display: grid;
+  justify-content: center;
+  align-content: center;
+  color: #2196f3;
+  height: 100%;
 }
 #galery > .img-container img{
   cursor: -webkit-zoom-in;
