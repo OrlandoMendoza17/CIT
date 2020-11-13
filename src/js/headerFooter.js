@@ -17,19 +17,19 @@ const plantillaFooter = (backURL,  carpetaURL_2, carpetaURL_1) =>{
                 <ul>
                   <li>
                     <i class="fas fa-database"></i>
-                    <a href="${carpetaURL_2}sipi.html">SIPI</a>
+                    <a href="${carpetaURL_2}proyectos.html#sipi">SIPI</a>
                   </li>
                   <li>
                     <i class="fas fa-project-diagram"></i>
-                    <a href="${carpetaURL_2}fedeindustrias.html">FedeIndustrias</a>
+                    <a href="${carpetaURL_2}proyectos.html#fedeindustrias">FedeIndustrias</a>
                   </li>
                   <li>
                     <i class="fas fa-sitemap"></i>
-                    <a href="${carpetaURL_2}zayco.html"">Zayco</a>
+                    <a href="${carpetaURL_2}proyectos.html#zayco"">Zayco</a>
                   </li>
                   <li>
                     <i class="fas fa-project-diagram"></i>
-                    <a href="${carpetaURL_2}valery.html">Valery</a>
+                    <a href="${carpetaURL_2}proyectos.html#valery">Valery</a>
                   </li>
                 </ul>
               </div>
@@ -67,7 +67,7 @@ const plantillaFooter = (backURL,  carpetaURL_2, carpetaURL_1) =>{
 }
 const plantillaNavBar = (backURL,  carpetaURL_2, carpetaURL_1) =>{
   return `<div>
-            <nav class="navbar fixed-top navbar-expand-md navbar-dark scrolling-navbar transparente trans">
+            <nav id="navBar" class="navbar fixed-top navbar-expand-md navbar-dark scrolling-navbar transparente trans">
               <!-- Brand -->
               <a class="navbar-brand" href="${backURL}index.html">
                 <img class="" width="80" src="${backURL}src/img/logo de cit.png" alt="logo de cit">
@@ -77,7 +77,7 @@ const plantillaNavBar = (backURL,  carpetaURL_2, carpetaURL_1) =>{
                 <ul class="navbar-nav" style="margin-bottom: -10px;">
                   
                   <li class="nav-item dropdown">
-                    <a class="mx-sm-2 mx-md-2 mx-lg-4 nav-item colorgris dropdown-toggle" href="#?">
+                    <a class="mx-sm-2 nav-item colorgris dropdown-toggle" href="#?">
                       <i class="fas fa-users bluetech"></i><span>Nosotros</span></a>
                     
                     <div class="dropdown-menu dropdown-primary">
@@ -90,21 +90,21 @@ const plantillaNavBar = (backURL,  carpetaURL_2, carpetaURL_1) =>{
                     </div>
                   </li>
                   <li class="nav-item dropdown">
-                    <a class="mx-sm-2 mx-md-2 mx-lg-4 nav-item colorgris dropdown-toggle" href="#?">
+                    <a class="mx-sm-2 nav-item colorgris dropdown-toggle" href="#?">
                     <i class="fas fa-project-diagram bluetech"></i><span>Proyectos</span></a>
                     
                     <div class="dropdown-menu dropdown-primary">
-                      <a class="dropdown-item" href="${carpetaURL_2}sipi.html">SIPI</a>
-                      <a class="dropdown-item" href="${carpetaURL_2}fedeindustrias.html">FedeIndustrias</a>
-                      <a class="dropdown-item" href="${carpetaURL_2}zayco.html">Zayco</a>
-                      <a class="dropdown-item" href="${carpetaURL_2}valery.html">Valery</a>
+                      <a class="dropdown-item" href="${carpetaURL_2}proyectos.html#sipi">SIPI</a>
+                      <a class="dropdown-item" href="${carpetaURL_2}proyectos.html#fedeindustrias">FedeIndustrias</a>
+                      <a class="dropdown-item" href="${carpetaURL_2}proyectos.html#zayco">Zayco</a>
+                      <a class="dropdown-item" href="${carpetaURL_2}proyectos.html#valery">Valery</a>
                     </div>
                   </li>
                   <li>
-                    <a class="mx-sm-2 mx-md-2 mx-lg-4 nav-item colorgris" href="${backURL}servicios.html"><i class="fas fa-handshake bluetech"></i><span>Servicios</span></a>
+                    <a class="mx-sm-2 nav-item colorgris" href="${backURL}servicios.html"><i class="fas fa-handshake bluetech"></i><span>Servicios</span></a>
                   </li>
                   <li>
-                    <a class="mx-sm-2 mx-md-2 mx-lg-4 nav-item colorgris" href="${backURL}contacto.html"><i class="fas fa-phone bluetech"></i><span>Contacto</span></a>
+                    <a class="mx-sm-2 nav-item colorgris" href="${backURL}contacto.html"><i class="fas fa-phone bluetech"></i><span>Contacto</span></a>
                   </li>
               
                 </ul>
